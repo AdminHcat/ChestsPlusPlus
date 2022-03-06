@@ -36,7 +36,7 @@ public class HopperListener implements Listener {
         //TO HOPPER
         if(event.getDestination().getHolder() instanceof Hopper){
             if(event.getDestination().getLocation() != null){
-                // If the event is cancelled by other plugin
+                // If the event is cancelled by other plugin 如果事件被其他插件取消
                 if(event.isCancelled()) return;
                 if(event.getDestination().getLocation().getBlock().isBlockPowered()) return;
             }
@@ -46,12 +46,13 @@ public class HopperListener implements Listener {
 
             event.setCancelled(!isFilteredItem.apply(event.getItem()));
 
-            // Item shouldn't be allowed
+            //Item shouldn't be allowed 物品不应该被允许
             if (event.isCancelled() && ServerType.getType() == ServerType.Type.PAPER) {
                 int index = event.getSource().first(event.getItem());
                 int hopperAmount = SpigotConfig.getWorldSettings(event.getSource().getLocation()).getHopperAmount();
 
                 // Loop over the inventory until next item is found, if no item found return.
+                // 如果没有找到返回物品，则循环检查库存，直到找到下一个物品
                 while (true) {
                     if (index >= event.getSource().getSize()) {
                         return;
@@ -74,7 +75,7 @@ public class HopperListener implements Listener {
 
     @EventHandler(priority = EventPriority.HIGH)
     public void fromHopper(InventoryMoveItemEvent event){
-        //FROM HOPPER
+        //FROM HOPPER 来自漏斗
         if (event.getInitiator().getHolder() instanceof Hopper) {
             Location location = event.getDestination().getLocation();
             ChestLinkStorage storage = Config.getChestLink().getStorage(location);

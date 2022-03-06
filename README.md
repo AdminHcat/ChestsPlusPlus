@@ -2,7 +2,7 @@
 
 <a href="https://www.buymeacoffee.com/jamespeters"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a beer&emoji=🍺&slug=jamespeters&button_colour=FF5F5F&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00"></a>
 
-Minecraft Spigot mod that enhances chests and hoppers, with ChestLinks, Auto-Crafting and Hopper filters!
+Minecraft Spigot mod 可增强箱子和漏斗，箱子链接、自动制作和漏斗过滤器！
 
 <p align="center">
   <img src="https://i.imgur.com/fFWiH5Y.png">
@@ -14,7 +14,7 @@ If your server is using this plugin let me know so I can feature it!
   <img src="https://i.imgur.com/T1Cq6t8.png">
 </p>
 
- 
+
 ## Features:
   - Ability to link multiple chests together across the entire server to be accessed from anywhere!
   - Use Hoppers to filter items from chests using hoppers!
@@ -25,29 +25,29 @@ If your server is using this plugin let me know so I can feature it!
   - Remotely open chests with a nice menu system!
   - Party system with a UI to share all your ChestLinks & AutoCrafters with other players!
   - Language support
-  
-## How to Create Linked Chests:
+
+## 如何创建箱子链接:
   - Add a Chest using **/chestlink add** <**group**>  or simply write the ChestLink format on a sign placed on a Chest!
-  ![](https://i.gyazo.com/5ef24a3833e57bc0b3df230a90d67fb9.png)
+    ![](https://i.gyazo.com/5ef24a3833e57bc0b3df230a90d67fb9.png)
   - Open a chest as you normally would! or use /chestlink open <group> or /chestlink menu to open the chest remotely!
   - Each chest that gets added to that group will share the same inventory with all other chests in that group!
   - *Note the **/chestlink** command can be replaced with **/cl** for convenience.*
-  
-## How to Create Auto-Crafting Stations
+
+## 如何创建 自动制作站
   - Add a Crafting Table using **/autocraft add** <**group**> or simply write the AutoCraft format on a sign placed on a Crafting Table!
-  
+
   ![](https://i.imgur.com/RTeUOvX.png)
   - Open the Crafting Table and create your recipe (This requires at least one of each item and it won't use that item up!)
   - Once you have a valid recipe the table will notify you with a chime, at this point if the recipe has different variations such as wood type they will start to animate in the crafting grid.
   - To start crafting, a Chest (or any block with a valid inventory such as Furnaces, Barrels, Shulker Boxes, Hoppers etc) must be placed either on top or on any of the 3 sides not including the front.
   - Next, place a hopper underneath the Crafting Table and AutoCrafting will start automatically.
   - Alternatively, place a Chest or any other inventory block underneath the Crafting Table and apply a redstone signal to it.
-  
-  ### Torch AutoCraft Example:
+
+  ### 自动制作火把例子:
   The following configurations work to AutoCraft torches with either a Hopper, or a chest underneath!
   ![](https://i.imgur.com/fpgNWLy.png)
 
-## Hopper Filters
+## 漏斗过滤
   - Hoppers can have filters applied to them so that they only accepted or reject certain items.
   - To add a filter to a Hopper you simply place an item frame on top or on any of its sides, and then place the item you would like to filter in it.
   - Currently there are four types of filters that can be enabled by rotating the item in the Item Frame.
@@ -58,21 +58,21 @@ If your server is using this plugin let me know so I can feature it!
     4. 135° Type-Rejection - The Hopper will reject all items that would normally be accepted in the filter above, so similar types are rejected. 
     
     ![](https://i.imgur.com/DU1rlxq.png)
-  
-## Example Sorting System:
+
+## 过滤系统例子:
 
 ![Example Sorting System](https://i.imgur.com/YNlMOiO.png)
 
-## Sorting Multiple Items:
+## 过滤多个物品:
 
 ![Sorting Multiple Item](https://i.imgur.com/AiEZ6ic.png)
 
-## Inventory Menu:
+## 库存菜单:
 
 ![Inventory Menu](https://i.imgur.com/StpFBYm.png)
 
-## Party UI
-### How to create a party
+## Party 界面
+### 如何创建队伍
 ![Create a party](https://i.imgur.com/LLkq1ew.png)
 ![Anvil UI](https://i.imgur.com/6XrRKZ0.png)
 
@@ -89,9 +89,9 @@ If your server is using this plugin let me know so I can feature it!
 
 
 
-## Commands:
-  #### ChestLink Commands - **/chestlink** or **/cl** are accepted.
-  
+## 命令:
+  #### 箱子链接命令- **/chestlink** 或**/cl**  都阔以
+
   - /chestlink add <Group> "Create/add a chest to a ChestLink group"
   - /chestlink remove <Group>  "Delete a ChestLink and drop its inventory at your feet!"  
   - /chestlink open <Group>  "Open the inventory of a ChestLink group"
@@ -117,25 +117,25 @@ If your server is using this plugin let me know so I can feature it!
   - /autocraft setpublic <group> <true/false> "Set an AutoCraft group to be accessible by anyone."
   - /autocraft rename <group> <new-name> ""Rename an AutoCraft group."
   - /autocraft party "Open the party menu, to allow other players to access all your Chests and AutoCrafters."
-  
+
   #### ChestsPlusPlus Commands - **/chestsplusplus** or **/c++** are accepted.
   - /chestsplusplus party "Open the party menu, to allow other players to access all your Chests and AutoCrafters."
   - /chestsplusplus version
-  
+
 ## Spotlights:
 
 [![](http://img.youtube.com/vi/a1MvNNEe8NM/0.jpg)](http://www.youtube.com/watch?v=a1MvNNEe8NM "Spotlight")
 
 
-## Tutorial:
+## 教程:
 
 [![](http://img.youtube.com/vi/Cxsvg539RQk/0.jpg)](http://www.youtube.com/watch?v=Cxsvg539RQk "Tutorial")
 
-## How to install:
+## 如何安装:
 Simply drop the .jar file into the /plugins folder!
- 
 
-## Permissions:
+
+## 权限:
 
 ```yaml
 chestlink.add:
@@ -214,6 +214,6 @@ chestlink.party.accept_invite:
 "Gives permission to accept Chests++ party invites."
 default: true
 ```
- 
-# Donate!:
+
+# 捐赠!:
 https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4BCPAVJ7PBUUY&source=url
